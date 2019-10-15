@@ -11,9 +11,9 @@ public static void main(String arg[]) {
  String reverse ="";
 
  Pattern p = Pattern.compile("\\s");
- String statement[] = p.split(Message);
+ String[] statement = p.split(Message);
 
-
+ 
 for(int x=statement.length-1;x>=0;--x) {
 	reverse=reverse+statement[x];
 }
