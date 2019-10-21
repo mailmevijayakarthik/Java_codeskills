@@ -20,7 +20,7 @@ public class MyString {
 	
 	public static void getcharoutofString(String name) {
 		char[] chararr = name.toCharArray();
-		System.out.println("My char Array :"+ chararr);
+		System.out.println("My char Array :"+ chararr.length);
 		for(char i : chararr) {
 			System.out.println(i);
 		}
