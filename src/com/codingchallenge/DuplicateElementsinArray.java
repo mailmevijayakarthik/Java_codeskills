@@ -16,24 +16,24 @@ public static void main(String arg[]) {
 	int number[]= {1,20,30,20,50,30,30,40,50};
 	
 	
-	ArrayList<String> list = new ArrayList<String>();
+//	ArrayList<String> list = new ArrayList<String>();
+//	
+//	for(int i=0;i<number.length;i++) {
+//		list.add(Integer.toString(number[i]));
+//	}
 	
-	for(int i=0;i<number.length;i++) {
-		list.add(Integer.toString(number[i]));
-	}
+	HashSet<Integer> uniqueset = new HashSet<Integer>();
+	HashSet<Integer> duplicateset = new HashSet<Integer>();
 	
-	HashSet<String> uniquelist = new HashSet<String>();
-	HashSet<String> duplicateelements = new HashSet<String>();
-	
-	for(String element : list) {
-		if(!uniquelist.add(element)) {
-			duplicateelements.add(element);
+	for(int element : number) {
+		if(!uniqueset.add(element)) {
+			duplicateset.add(element);
 		}
 		
 	}
 	
-	System.out.println(uniquelist);
-	System.out.println("Duplicate Elements :" + duplicateelements);
+	System.out.println(uniqueset);
+	System.out.println("Duplicate Elements :" + duplicateset);
 	
 	
 	

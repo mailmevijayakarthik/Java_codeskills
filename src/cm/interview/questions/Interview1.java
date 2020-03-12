@@ -11,6 +11,7 @@ package cm.interview.questions;
         DoPrint(y); 
         DoPrint(z); 
     } 
+    
    public static void DoPrint( Base o ) { 
 
         o.Print();   
